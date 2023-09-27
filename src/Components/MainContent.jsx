@@ -1,0 +1,48 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import TypeWriting from "./TypeWriting/TypeWriting";
+import devSrc from "../Assets/dev.png";
+import styles from "./mainContent.module.css";
+import { GiBleedingEye } from "react-icons/gi";
+
+export default function MainContent() {
+  useEffect(() => {
+    AOS.init({ duration: "1250" });
+  }, []);
+  return (
+    <section
+      className="flex flex-wrap justify-around items-center"
+      style={{ height: "90vh" }}
+    >
+      <section data-aos="fade-right" className="sm:1/2 md:w-1/3">
+        <img src={devSrc} title="Developer" alt="Developer" />
+      </section>
+      <section
+        data-aos="fade-left"
+        className="w-1/3 flex justify-center items-center flex-col"
+      >
+        <TypeWriting />
+        <p className="mt-4 px-5 py-2 font-bold text-center bg-purple-950 text-white rounded-full">
+          JUNIOR [ FRONT-END ] DEVELOPER
+        </p>
+        <p className="text-center font-medium">
+          A developer with 2 years of recent focus on web development who is
+          eager to learn new things and enjoy experiencing new challenges, Also
+          interested in play chess
+        </p>
+        <section className="mt-4">
+          <a
+            className={styles.BtnTarget}
+            href="../Assets/CV-Mahdi-Falahati.pdf"
+            download
+          >
+            <span>
+              Resume <GiBleedingEye className="inline" />{" "}
+            </span>
+          </a>
+        </section>
+      </section>
+    </section>
+  );
+}
