@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import styles from "./MainHeader.module.css";
 import Logo from "../Assets/Icons/Logo.png";
+import { GiBarracksTent, GiBandit, GiBubblingFlask, GiAnglerFish } from "react-icons/gi";
 
 export default function MainHeader() {
   return (
@@ -12,10 +13,13 @@ export default function MainHeader() {
         <span></span>
       </label>
       <ul className={styles.header_items}>
-        {navItems?.map((item, id) => {
+        {navItems?.map(({ name, icon }, id) => {
           return (
             <li key={id} className={headerItem}>
-              <a>{item}</a>
+              <a className="flex items-center">
+                {icon}
+                {name}
+              </a>
             </li>
           );
         })}
@@ -28,10 +32,14 @@ export default function MainHeader() {
     </header>
   );
 }
-
-const navItems = ["Home", "About ME", "Projects", "concat ME"];
+const navItems = [
+  { name: "Home", icon: <GiBarracksTent className="mr-1" /> },
+  { name: "Projects", icon: <GiBubblingFlask className="mr-1" /> },
+  { name: "About ME", icon: <GiBandit className="mr-1" /> },
+  { name: "Contact ME", icon: <GiAnglerFish className="mr-1" /> },
+];
 const headerItem = classNames(
-  "w-24",
+  "mx-3",
   "font-bold",
   "text-center",
   "whitespace-nowrap",
