@@ -33,10 +33,10 @@ export default function MainHeader() {
   );
 }
 const navItems = [
-  { name: "Home", icon: <GiBarracksTent className="mr-1" /> },
-  { name: "Projects", icon: <GiBubblingFlask className="mr-1" /> },
-  { name: "About ME", icon: <GiBandit className="mr-1" /> },
-  { name: "Contact ME", icon: <GiAnglerFish className="mr-1" /> },
+  { name: "Home", icon: <GiBarracksTent className="mr-1 text-green-900" /> },
+  { name: "Projects", icon: <GiBubblingFlask className="mr-1 text-purple-900" /> },
+  { name: "About ME", icon: <GiBandit className="mr-1 text-red-700" /> },
+  { name: "Contact ME", icon: <GiAnglerFish className="mr-1 text-blue-900" /> },
 ];
 const headerItem = classNames(
   "mx-3",
@@ -44,5 +44,5 @@ const headerItem = classNames(
   "text-center",
   "whitespace-nowrap",
   "cursor-pointer",
-  "hover:text-gray-500"
+  "hover:opacity-75"
 );
