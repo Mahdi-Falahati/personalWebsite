@@ -23,7 +23,10 @@ export default function MainContent() {
         className="w-1/3 flex justify-center items-center flex-col"
       >
         <TypeWriting />
-        <p className="mt-4 px-5 py-2 font-bold text-center bg-purple-950 text-white rounded-full">
+        <p
+          data-aos="zoom-in-down"
+          className="mt-4 px-5 py-2 font-bold text-center bg-purple-950 text-white rounded-full"
+        >
           JUNIOR [ FRONT-END ] DEVELOPER
         </p>
         <p className="text-center font-medium">
