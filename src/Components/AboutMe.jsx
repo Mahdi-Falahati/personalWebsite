@@ -5,7 +5,7 @@ import RC from "../Assets/RC.jpg";
 
 export default function AboutMe() {
   return (
-    <section className="mt-3 pt-1 px-16">
+    <section className="mt-3 pt-1 px-1 sm:px-16">
       <div className="mt-4 flex flex-col sm:flex-row items-center justify-around">
         <p className="bg-orange-600 rounded w-5/6 sm:w-1/3 h-1"></p>
         <h1 className="text-center my-2 sm:my-0 text-3xl font-bold">
@@ -20,7 +20,7 @@ export default function AboutMe() {
           data-aos-easing="ease-in-sine"
           className="my-10"
         >
-          <CardAnim
+          {/* <CardAnim
             title="My hobbies are...."
             habbies={habbies}
             img={{
@@ -28,13 +28,13 @@ export default function AboutMe() {
               title: "RC",
               src: RC,
             }}
-          />
+          /> */}
         </div>
         <section
           data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="1500"
-          className="px-4 w-96 my-10"
+          className="sm:px-4 px-1 w-full sm:w-96 my-10"
         >
           <h1 className="font-bold text-left mb-4">
             EDUCATION

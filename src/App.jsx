@@ -1,14 +1,18 @@
 import MainContent from "./Components/MainContent";
 import MainHeader from "./Components/MainHeader";
+import AboutMe from "./Components/AboutMe";
 
 function App() {
   return (
-    <div className="container mx-[auto]">
-      <MainHeader />
+    <>
+      <header className="container mx-[auto]">
+        <MainHeader />
+      </header>
       <main>
         <MainContent />
+        <AboutMe />
       </main>
-    </div>
+    </>
   );
 }
 
