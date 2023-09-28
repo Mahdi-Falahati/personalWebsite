@@ -15,9 +15,9 @@ export default function AboutMe() {
       </div>
       <section className="my-20 h-full flex flex-wrap justify-around align-center">
         <div
-          // data-aos="fade-right"
-          // data-aos-offset="300"
-          // data-aos-easing="ease-in-sine"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
           className="my-10"
         >
           <CardAnim
