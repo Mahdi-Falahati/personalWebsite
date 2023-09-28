@@ -29,7 +29,7 @@ export default function MainContent() {
         >
           JUNIOR [ FRONT-END ] DEVELOPER
         </p>
-        <p className="text-center font-medium">
+        <p className="mt-3 px-3 border-x border-gray-400 text-center font-medium text-gray-600 text-sm">
           A developer with 2 years of recent focus on web development who is
           eager to learn new things and enjoy experiencing new challenges, Also
           interested in play chess
