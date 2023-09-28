@@ -5,7 +5,7 @@ import { GiBarracksTent, GiBandit, GiBubblingFlask, GiAnglerFish } from "react-i
 
 export default function MainHeader() {
   return (
-    <header className="relative border-b border-gray-300 h-16 flex items-center">
+    <nav className="relative border-b border-gray-300 h-16 flex items-center">
       <input type="checkbox" id="nav-toggle" className={styles.checkbox} />
       <label htmlFor="nav-toggle" className={styles.button}>
         <span></span>
@@ -29,7 +29,7 @@ export default function MainHeader() {
           <img src={Logo} title="RC" alt="RC" className="h-11" />
         </a>
       </div>
-    </header>
+    </nav>
   );
 }
 const navItems = [
