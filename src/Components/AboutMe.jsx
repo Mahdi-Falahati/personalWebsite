@@ -1,7 +1,7 @@
 import CardAnim from "./CardAnimation/CardAnim";
 import { GiEvilBook, GiWorld } from "react-icons/gi";
 
-import RC from "../Assets/RC.jpg";
+import RC from "../Assets/RC.png";
 
 export default function AboutMe() {
   return (
@@ -65,7 +65,7 @@ export default function AboutMe() {
         </section>
       </section>
     </section>
-  );
+  );  
 }
 
 const habbies = [

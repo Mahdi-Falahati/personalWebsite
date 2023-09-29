@@ -22,7 +22,12 @@ export default function CardAnim({ title, habbies, img }) {
       </main>
       <div className={styles.card_description}>
         <div className={styles.RCImg}>
-          <img src={img.src} title={img.title} alt={img.alt} />
+          <img
+            src={img.src}
+            title={img.title}
+            alt={img.alt}
+            className="bg-gray-200"
+          />
         </div>
       </div>
     </section>
