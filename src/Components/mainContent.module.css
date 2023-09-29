@@ -64,3 +64,8 @@
   position: relative;
   font-weight: 600;
 }
+
+.bgImage{
+  background: url("../Assets/bg.jfif") no-repeat bottom;
+  background-size: contain;
+}

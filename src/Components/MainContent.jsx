@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import TypeWriting from "./TypeWriting/TypeWriting";
-import devSrc from "../Assets/dev.png";
+import devSrc from "../Assets/rc.png";
 import styles from "./mainContent.module.css";
 import { GiBleedingEye } from "react-icons/gi";
 
@@ -16,7 +16,7 @@ export default function MainContent() {
       style={{ height: "90vh" }}
     >
       <section data-aos="fade-right" className="w-1/2 md:w-1/3">
-        <img src={devSrc} title="Developer" alt="Developer" />
+        <img src={devSrc} className={styles.bgImage+" rounded-2xl"} title="Developer" alt="Developer" />
       </section>
       <section
         data-aos="fade-left"

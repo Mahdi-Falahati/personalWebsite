@@ -1,7 +1,7 @@
 import CardAnim from "./CardAnimation/CardAnim";
 import { GiEvilBook, GiWorld } from "react-icons/gi";
 
-import RC from "../Assets/RC.png";
+import RC from "../Assets/RC0.png";
 
 export default function AboutMe() {
   return (
