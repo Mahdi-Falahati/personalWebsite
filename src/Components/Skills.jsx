@@ -18,14 +18,14 @@ import git from "../Assets/Icons/git.svg";
 
 export default function Skills() {
   return (
-    <div className="bg-purple-900 py-10">
+    <div className="bg-purple-900 py-8">
       <section className="flex justify-center items-center border-b border-white pb-3">
         <h2 className="text-center text-white text-3xl font-bold">SKILLS</h2>
         <GiBlackHoleBolas className="ml-5 text-white text-3xl" />
       </section>
       <section>
         <div
-          className="py-5 bg-white my-2"
+          className="py-5 bg-white my-4"
           data-aos="fade-right"
         >
           <Slider images={src} height="h-14" />

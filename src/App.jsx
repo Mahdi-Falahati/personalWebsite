@@ -1,6 +1,7 @@
 import MainContent from "./Components/MainContent";
 import MainHeader from "./Components/MainHeader";
 import AboutMe from "./Components/AboutMe";
+import Skills from "./Components/Skills";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <main>
         <MainContent />
         <AboutMe />
+        <Skills />
       </main>
     </>
   );
