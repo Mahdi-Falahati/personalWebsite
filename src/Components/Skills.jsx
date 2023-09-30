@@ -37,7 +37,7 @@ export default function Skills() {
               slidesPerView={4}
             />
           </div>
-          <div className="py-5 px-2 cursor-move rounded-2xl mb-5 w-11/12 md:w-1/3 bg-white">
+          <div className="py-5 px-2 rounded-2xl mb-5 w-11/12 md:w-1/3 bg-white">
             <Slider
               images={base}
               height="h-14"
