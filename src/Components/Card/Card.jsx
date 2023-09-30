@@ -3,11 +3,10 @@ import { GiWarlockEye } from "react-icons/gi";
 import { FaGithub } from "react-icons/fa";
 
 export default function Card({ img, link, title, tecnologhy, decription }) {
-  console.log(img&&true);
   return (
     <div className={`w-80 shadow-2xl rounded-md ${styles.card}`}>
       <div className="flex justify-center w-full border-b border-gray-500">
-        {img && (
+        {img.src && (
           <img
             src={img.src}
             alt={img.alt || "RC"}
