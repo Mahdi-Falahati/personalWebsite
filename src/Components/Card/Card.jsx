@@ -10,7 +10,6 @@ export default function Card({ img, link, title, tecnologhy, decription }) {
         {img && (
           <img
             src={img.src}
-            title={img.title || "RC"}
             alt={img.alt || "RC"}
             className="h-60"
           />
