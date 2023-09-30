@@ -12,7 +12,10 @@ import useHttp from "../Assets/Projects/useHttp.jpg";
 export default function OpenSourceProjects() {
   return (
     <section className="my-8">
-      <h2 className="text-2xl py-2 font-bold text-center">
+      <h2
+        className="text-2xl py-2 font-bold text-center"
+        id="OpenSourceProjects"
+      >
         - OpenSource Projects -
       </h2>
       <section className="mx-1 flex justify-around flex-wrap items-center">

@@ -16,7 +16,12 @@ export default function MainContent() {
       style={{ height: "90vh" }}
     >
       <section data-aos="fade-right" className="w-1/2 md:w-1/3">
-        <img src={devSrc} className={styles.bgImage} title="Developer" alt="Developer" />
+        <img
+          src={devSrc}
+          className={styles.bgImage}
+          title="Developer"
+          alt="Developer"
+        />
       </section>
       <section
         data-aos="fade-left"
@@ -34,16 +39,23 @@ export default function MainContent() {
           eager to learn new things and enjoy experiencing new challenges, Also
           interested in play chess
         </p>
-        <section className="mt-4">
-          <a
-            className={styles.BtnTarget}
-            href="../Assets/CV-Mahdi-Falahati.pdf"
-            download
-          >
-            <span>
-              Resume <GiBleedingEye className="inline" />{" "}
-            </span>
-          </a>
+        <section className="h-36 flex justify-around items-center flex-wrap">
+          <div className="mx-1">
+            <a
+              className={styles.BtnTarget}
+              href="../Assets/CV-Mahdi-Falahati.pdf"
+              download
+            >
+              <span>
+                Resume <GiBleedingEye className="inline" />{" "}
+              </span>
+            </a>
+          </div>
+          <div className="mx-1">
+            <a className={styles.btnPulse} href="#OpenSourceProjects">
+              OpenSourceProjects
+            </a>
+          </div>
         </section>
       </section>
     </section>
