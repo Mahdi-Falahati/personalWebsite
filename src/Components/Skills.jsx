@@ -26,7 +26,7 @@ export default function Skills() {
       <section>
         <div
           className="py-5 bg-white my-2"
-          data-aos="zoom-in-up"
+          data-aos="fade-right"
         >
           <Slider images={src} height="h-14" />
         </div>

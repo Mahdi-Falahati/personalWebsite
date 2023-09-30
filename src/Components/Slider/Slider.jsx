@@ -19,7 +19,7 @@ export default function Slider({ images, height }) {
           rows: 1,
         }}
         autoplay={{
-          delay: 1300,
+          delay: 1500,
           disableOnInteraction: false,
         }}
         modules={[Autoplay, Grid]}
