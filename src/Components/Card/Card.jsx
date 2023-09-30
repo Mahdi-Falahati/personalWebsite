@@ -32,7 +32,7 @@ export default function Card({ img, link, title, tecnologhy, decription }) {
         <p className="flex justify-center items-center h-5/6">{decription}</p>
         <div className="flex justify-between">
           <a
-            href={link.live}
+            href={link.live||""}
             className="hover:animate-bounce border rounded-md px-3 py-2 hover:bg-white hover:text-black"
           >
             <GiWarlockEye className="inline-block text-3xl" /> Live
