@@ -85,7 +85,7 @@ export default function AboutMe() {
       >
         <div className="md:px-4 px-1 w-full tracking-widest text-sm font-bold text-gray-500 text-left md:text-justify">
           <GiWerewolf className="mr-2 inline text-3xl text-black" />
-          <spn className="text-sm text-black">As a front-end developer</spn>
+          <span className="text-sm text-black">As a front-end developer</span>
           <p className="mb-2">
             fluent in React, Redux, Redux Toolkit, React Router DOM, MUI, and
             TailwindCSS, I have a strong foundation in building dynamic and
