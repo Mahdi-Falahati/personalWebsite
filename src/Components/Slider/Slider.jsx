@@ -7,7 +7,14 @@ import "swiper/css/navigation";
 
 import { Autoplay, Grid } from "swiper/modules";
 
-export default function Slider({ images, height, delay,slidesPerView }) {
+export default function Slider({
+  images,
+  height,
+  delay,
+  slidesPerView,
+  aniamte,
+  hoverAniamte,
+}) {
   return (
     <>
       <Swiper
@@ -19,7 +26,7 @@ export default function Slider({ images, height, delay,slidesPerView }) {
           rows: 1,
         }}
         autoplay={{
-          delay: delay || 1500,
+          delay: delay || 2000,
           disableOnInteraction: false,
         }}
         modules={[Autoplay, Grid]}
@@ -28,7 +35,12 @@ export default function Slider({ images, height, delay,slidesPerView }) {
         {images.map((src, id) => {
           return (
             <SwiperSlide key={id}>
-              <img src={src} className={height} />
+              <img
+                src={src}
+                className={`${height} ${aniamte ? aniamte : ""} ${
+                  hoverAniamte ? "hover:" + hoverAniamte : ""
+                } cursor-ew-resize`}
+              />
             </SwiperSlide>
           );
         })}
