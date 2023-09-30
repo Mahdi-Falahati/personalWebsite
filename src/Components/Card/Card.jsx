@@ -4,13 +4,12 @@ import { FaGithub } from "react-icons/fa";
 
 export default function Card({ img, link, title, tecnologhy, decription }) {
   return (
-    <div className={`w-80 shadow-2xl rounded-md ${styles.card}`}>
+    <div className={`w-96 shadow-2xl rounded-md ${styles.card}`}>
       <div className="flex justify-center w-full border-b border-gray-500">
         {img.src && (
           <img
             src={img.src}
             alt={img.alt || "RC"}
-            className="h-60"
           />
         )}
       </div>
