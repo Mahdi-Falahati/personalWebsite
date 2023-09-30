@@ -4,7 +4,7 @@ import email from "../Assets/Icons/email.svg";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-wrap justify-center md:justify-around my-5 border-t border-gray-400 pt-5">
+    <footer id="ConcatME" className="flex flex-wrap justify-center md:justify-around my-5 border-t border-gray-400 pt-5">
       <p className="md:w-auto w-full justify-center flex items-center">
         <img src={call} className="h-10 mr-2" />
         <a href="tel:+989021571617">+989021571617</a>

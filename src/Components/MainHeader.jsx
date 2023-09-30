@@ -13,10 +13,10 @@ export default function MainHeader() {
         <span></span>
       </label>
       <ul className={styles.header_items}>
-        {navItems?.map(({ name, icon }, id) => {
+        {navItems?.map(({ name, icon ,href}, id) => {
           return (
             <li key={id} className={headerItem}>
-              <a className="flex items-center">
+              <a href={href} className="flex items-center">
                 {icon}
                 {name}
               </a>
@@ -33,10 +33,10 @@ export default function MainHeader() {
   );
 }
 const navItems = [
-  { name: "Home", icon: <GiBarracksTent className="mr-1 text-green-900" /> },
-  { name: "Projects", icon: <GiBubblingFlask className="mr-1 text-purple-900" /> },
-  { name: "About ME", icon: <GiBandit className="mr-1 text-red-700" /> },
-  { name: "Contact ME", icon: <GiAnglerFish className="mr-1 text-blue-900" /> },
+  { name: "Home",href:"#", icon: <GiBarracksTent className="mr-1 text-green-900" /> },
+  { name: "Projects", href:"#OpenSourceProjects",icon: <GiBubblingFlask className="mr-1 text-purple-900" /> },
+  { name: "About ME",href:"#AboutMe", icon: <GiBandit className="mr-1 text-red-700" /> },
+  { name: "Contact ME",href:"#ConcatME", icon: <GiAnglerFish className="mr-1 text-blue-900" /> },
 ];
 const headerItem = classNames(
   "mx-3",

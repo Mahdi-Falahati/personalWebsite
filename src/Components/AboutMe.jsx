@@ -13,7 +13,7 @@ export default function AboutMe() {
     <section className="mt-3 pt-1 px-1 sm:px-16">
       <div className="mt-4 flex flex-col sm:flex-row items-center justify-around">
         <p className="bg-orange-600 rounded w-5/6 sm:w-1/3 h-1"></p>
-        <h1 className="text-center my-2 sm:my-0 text-3xl font-bold">
+        <h1 id="AboutMe" className="text-center my-2 sm:my-0 text-3xl font-bold">
           ABOUT ME
         </h1>
         <p className="bg-cyan-500 rounded w-5/6 sm:w-1/3 h-1 "></p>
