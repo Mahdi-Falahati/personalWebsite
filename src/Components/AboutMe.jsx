@@ -1,7 +1,12 @@
 import CardAnim from "./CardAnimation/CardAnim";
-import { GiEvilBook, GiWorld } from "react-icons/gi";
+import { GiEvilBook, GiWorld, GiWerewolf } from "react-icons/gi";
+import call from "../Assets/Icons/call.svg";
+import telegram from "../Assets/Icons/telegram.svg";
+import github from "../Assets/Icons/github.svg";
+import linkedin from "../Assets/Icons/linkedin.svg";
 
 import RC from "../Assets/RC0.png";
+import SocialMedia from "./SocialMedia/SocialMedia";
 
 export default function AboutMe() {
   return (
@@ -13,12 +18,12 @@ export default function AboutMe() {
         </h1>
         <p className="bg-cyan-500 rounded w-5/6 sm:w-1/3 h-1 "></p>
       </div>
-      <section className="my-20 h-full flex flex-wrap justify-around align-center">
+      <section className="mt-12 h-full flex flex-wrap justify-around align-center">
         <div
           data-aos="fade-right"
           data-aos-offset="300"
           data-aos-easing="ease-in-sine"
-          className="my-10"
+          className="mb-5 md:my-5"
         >
           <CardAnim
             title="My hobbies are...."
@@ -29,12 +34,22 @@ export default function AboutMe() {
               src: RC,
             }}
           />
+          <div className="md:px-4 px-1 w-full my-5 flex flex-wrap justify-around">
+            {SocialMedias?.map((item, id) => (
+              <SocialMedia
+                link={item.link}
+                icon={item.icon}
+                key={id}
+                title={item.title}
+              />
+            ))}
+          </div>
         </div>
         <section
           data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="1500"
-          className="sm:px-4 px-1 w-full sm:w-96 my-10"
+          className="sm:px-4 px-1 w-full sm:w-96 my-5"
         >
           <h1 className="font-bold text-left mb-4">
             EDUCATION
@@ -64,8 +79,34 @@ export default function AboutMe() {
           </section>
         </section>
       </section>
+      <section
+        className="mb-16 mt-3 flex flex-wrap justify-between"
+        data-aos="zoom-in-down"
+      >
+        <div className="md:px-4 px-1 w-full tracking-widest text-sm font-bold text-gray-500 text-left md:text-justify">
+          <GiWerewolf className="mr-2 inline text-3xl text-black" />
+          <spn className="text-sm text-black">As a front-end developer</spn>
+          <p className="mb-2">
+            fluent in React, Redux, Redux Toolkit, React Router DOM, MUI, and
+            TailwindCSS, I have a strong foundation in building dynamic and
+            responsive user interfaces. My experience in these technologies has
+            allowed me to develop a deep understanding of the React ecosystem
+            and its best practices. I am skilled in developing reusable
+            components, managing state using Redux, and routing using React
+            Router DOM. Additionally, I have experience working with Material UI
+            (MUI) and TailwindCSS, two popular UI libraries, to create visually
+            appealing and responsive designs.
+          </p>
+          <p>
+            In addition to my expertise in React, I am also familiar with
+            Next.js, a popular React framework. My familiarity with Next.js has
+            allowed me to build performant and scalable applications that are
+            optimized for search engines and social media sharing.
+          </p>
+        </div>
+      </section>
     </section>
-  );  
+  );
 }
 
 const habbies = [
@@ -95,4 +136,19 @@ const educations = [
     color: "text-yellow-500",
     location: "Cambridge, Massachusetts, USA",
   },
+];
+
+const SocialMedias = [
+  { link: "tel:+989021571617", icon: call, title: "Call ME" },
+  {
+    link: "https://www.linkedin.com/in/falahati-mahdi/",
+    icon: linkedin,
+    title: "Linkedin",
+  },
+  {
+    link: "https://telegram.me/Mahdi_Falahatii",
+    icon: telegram,
+    title: "Telegram",
+  },
+  { link: "https://github.com/Mahdi-Falahati", icon: github, title: "Github" },
 ];
