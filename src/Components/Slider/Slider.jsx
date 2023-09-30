@@ -7,14 +7,14 @@ import "swiper/css/navigation";
 
 import { Autoplay, Grid } from "swiper/modules";
 
-export default function Slider({ images, height, delay }) {
+export default function Slider({ images, height, delay,slidesPerView }) {
   return (
     <>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
         loop={true}
-        slidesPerView={6}
+        slidesPerView={slidesPerView}
         grid={{
           rows: 1,
         }}
