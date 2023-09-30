@@ -19,7 +19,7 @@ import mui from "../Assets/Icons/mui.svg";
 
 export default function Skills() {
   return (
-    <div className="bg-purple-900 py-8">
+    <div className="bg-purple-900 pt-8 pb-1">
       <section className="flex justify-center items-center border-b border-white pb-3">
         <h2 className="text-center tracking-widest	 text-white text-3xl font-bold">
           SKILLS
@@ -27,7 +27,7 @@ export default function Skills() {
         <GiBlackHoleBolas className="ml-5 text-white text-3xl" />
       </section>
       <section>
-        <section className="py-5 my-4 flex justify-around flex-wrap">
+        <section className=" my-8 flex justify-around items-center flex-wrap">
           <div className="py-5 px-2 rounded-2xl mb-5 w-11/12 md:w-1/2 bg-white">
             <Slider images={advance} height="h-14" slidesPerView={4} />
           </div>
