@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 
 import { Autoplay, Grid } from "swiper/modules";
 
-export default function Slider({ images, height }) {
+export default function Slider({ images, height, delay }) {
   return (
     <>
       <Swiper
@@ -19,7 +19,7 @@ export default function Slider({ images, height }) {
           rows: 1,
         }}
         autoplay={{
-          delay: 1500,
+          delay: delay || 1500,
           disableOnInteraction: false,
         }}
         modules={[Autoplay, Grid]}
