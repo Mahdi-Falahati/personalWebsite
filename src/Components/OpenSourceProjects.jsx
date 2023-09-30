@@ -18,6 +18,10 @@ export default function OpenSourceProjects() {
       >
         - OpenSource Projects -
       </h2>
+      <p className="text-center text-sm font-bold text-red-300">
+        The live page may not open for you if you live in Iran please Turn On
+        Your VPN
+      </p>
       <section className="mx-1 flex justify-around flex-wrap items-center">
         {Cards?.map((item, id) => (
           <Card
