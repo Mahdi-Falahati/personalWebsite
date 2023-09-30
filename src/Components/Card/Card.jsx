@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 
 export default function Card({ img, link, title, tecnologhy, decription }) {
   return (
-    <div className={`w-96 shadow-2xl rounded-md ${styles.card}`}>
+    <div className={`my-5 mx-1 w-96 shadow-2xl rounded-md ${styles.card}`}>
       <div className="flex justify-center w-full border-b border-gray-500">
         {img.src && (
           <img
