@@ -83,7 +83,7 @@ export default function AboutMe() {
         className="mb-16 mt-3 flex flex-wrap justify-between"
         data-aos="zoom-in-down"
       >
-        <div className="md:px-4 px-1 w-full tracking-widest text-sm font-bold text-gray-500 text-left md:text-justify">
+        <div className="md:px-4 px-2 w-full tracking-widest text-sm font-bold text-gray-500 text-left md:text-justify">
           <GiWerewolf className="mr-2 inline text-3xl text-black" />
           <span className="text-sm text-black">As a front-end developer</span>
           <p className="mb-2">
