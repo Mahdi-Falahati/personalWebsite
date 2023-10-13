@@ -30,7 +30,7 @@ export default function Skills() {
         <section className=" my-8 flex justify-around items-center flex-wrap">
           <div className="py-5 px-2 rounded-2xl mb-5 w-11/12 md:w-1/2 bg-white">
             <Slider
-              images={advance}
+              Logos={advance}
               aniamte="animate-pulse"
               hoverAniamte="animate-bounce"
               height="h-14"
@@ -39,7 +39,7 @@ export default function Skills() {
           </div>
           <div className="py-5 px-2 rounded-2xl mb-5 w-11/12 md:w-1/3 bg-white">
             <Slider
-              images={base}
+              Logos={base}
               height="h-14"
               delay="3000"
               slidesPerView={4}
@@ -53,15 +53,23 @@ export default function Skills() {
   );
 }
 
-const base = [html, css, tailwindcss, js, python, figma, git];
+const base = [
+  { logo: html, title: "HTML5" },
+  { logo: css, title: "CSS3" },
+  { logo: tailwindcss, title: "tailwindcss" },
+  { logo: js, title: "JavaScript" },
+  { logo: python, title: "Python" },
+  { logo: figma, title: "Figma" },
+  { logo: git, title: "Git" },
+];
 
 const advance = [
-  reactjs,
-  redux,
-  mui,
-  reactRouterDom,
-  jest,
-  nodejs,
-  nextjs,
-  mongodb,
+  { logo: reactjs, title: "ReactJS" },
+  { logo: redux, title: "Redux" },
+  { logo: mui, title: "MUI" },
+  { logo: reactRouterDom, title: "ReactRouterDom" },
+  { logo: jest, title: "JEST" },
+  { logo: nodejs, title: "NodeJS" },
+  { logo: nextjs, title: "NextJS" },
+  { logo: mongodb, title: "Mongodb" },
 ];

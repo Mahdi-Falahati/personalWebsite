@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 import { Autoplay, Grid } from "swiper/modules";
 
 export default function Slider({
-  images,
+  Logos,
   height,
   delay,
   slidesPerView,
@@ -32,15 +32,20 @@ export default function Slider({
         modules={[Autoplay, Grid]}
         className="mySwiper"
       >
-        {images.map((src, id) => {
+        {Logos.map((info, id) => {
           return (
             <SwiperSlide key={id}>
-              <img
-                src={src}
-                className={`${height} ${aniamte ? aniamte : ""} ${
-                  hoverAniamte ? "hover:" + hoverAniamte : ""
-                } cursor-ew-resize`}
-              />
+              <div className="flex flex-col items-center justify-center">
+                <img
+                  src={info.logo}
+                  className={`${height} ${aniamte ? aniamte : ""} ${
+                    hoverAniamte ? "hover:" + hoverAniamte : ""
+                  } cursor-ew-resize`}
+                />
+                <p className="text-center mt-2 font-bold italic text-gray-700 tracking-wider">
+                  {info.title}
+                </p>
+              </div>
             </SwiperSlide>
           );
         })}
